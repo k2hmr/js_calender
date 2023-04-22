@@ -8,11 +8,11 @@ const thisDay = today.getDate();
 const isOption = process.argv[2] !== undefined;
 const isNotOptionM = process.argv[2] !== "-m";
 const optionM = process.argv[3];
-const isThere4thArg = process.argv[4] ? true : false;
+const is4thArg = process.argv[4] ? true : false;
 const isOptionMInvalid =
   optionM && (!Number(optionM) || optionM < 1 || 12 < optionM);
 
-if (isOption && (isNotOptionM || isThere4thArg))
+if (isOption && (isNotOptionM || is4thArg))
   return console.log("Option is only first -m");
 if (isOption && isOptionMInvalid) return console.log("Option m is invalid!");
 
