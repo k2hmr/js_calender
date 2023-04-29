@@ -1,4 +1,4 @@
-//今日の日付
+//今日の日付を取得
 const today = new Date();
 const thisYear = today.getFullYear();
 const thisMonth = Number(today.getMonth()) + 1;
